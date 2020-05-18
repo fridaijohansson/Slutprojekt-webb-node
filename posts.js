@@ -1,0 +1,2 @@
+module.exports = [{id:1, user:"frida123", title:"Sherlock", author:"Arthur Conan Doyle", description:"About a guy and his companion...", link:"https://www.google.se/", liked:false, posted:"00:00"},
+{id:2, user:"abc123", title:"Dexter", author:"Jeff Lindsey", description:"About a disguised killer", link:"https://www.google.se/",liked:false, posted:"00:00"}];

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>USING VIEW</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome-USING VIEW</h1>
+    </header>
+
+    <main>
+        <div id="sign-in">
+            <a href="#">Sign In</a>
+        </div>
+
+        <div id="register">
+            <form action="/register" method="POST" enctype="multipart/form-data" >
+            
+                <div id="profilePic">
+                    <div id="photoInput">
+                        <img src="" class="img-responsive" alt="">
+                    </div>
+                    <input name="img" type="file" value="Add Photo">
+                    <input type="submit" value="submit">
+                </div>
+            
+                <input class="input" type="text" name="name" placeholder="Username">
+                <input class="input" type="email" name="email" placeholder="Email">
+                <input class="input" type="password" name="password" placeholder="Password">
+                <input class="input" type="password" name="confirm-pass" placeholder="Confirm Password">
+                <br>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+
+    </main>
+    
+</body>
+</html>

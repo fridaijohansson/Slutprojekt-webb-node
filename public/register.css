@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    background: #20242e;
+    color: cadetblue;
+}
+
+
+body{
+
+    height: 500px;
+    margin: auto;
+    
+
+    
+}
+
+
+
+/* first-page */
+.start-h{
+    height: 100px;
+    margin: auto;
+    font-style: italic;
+    font-size: 2rem;
+    color: rgb(235, 248, 115);
+    
+}
+aside{
+    float: left;
+    list-style-type: none;
+    width: 200px;
+    height: auto;
+    padding:20px
+}
+main{
+    text-align: center;
+    display: block;
+    width: 300px;
+    margin: auto;
+}
+nav{
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    border: solid 1px black;
+}
+
+#container-posts{
+    border: solid 1px cadetblue;
+    height: 500px;
+    margin-top: 20px;
+    padding: 5px;
+}
+.post{
+    border: solid 1px cadetblue;
+    height: 100px;
+    margin-top: 10px; 
+}
+
+
+
+
+
+
+
+/* login och register */
+
+.start-h{
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+
+}
+.start{
+    margin: auto;
+    margin-top: 100px;
+    width: 500px;
+    height: 380px;
+    padding: 5px;
+    display: flex;
+    background: #20242e75;
+}
+#sign-in{
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    flex: 1;
+}
+#sign-in a {
+    color: rgb(235, 248, 115); 
+}
+#sign-in a:hover{
+    color: cadetblue; 
+}
+
+#register{
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid;
+    flex: 1;
+}
+#photoInput{
+    height: 100px;
+    width: 100px;
+    background: cadetblue;
+    border: double 1px rgb(235, 248, 115);;
+    border-radius: 50%;
+    margin: auto;
+}
+#register form{
+    padding: 5px;
+    margin: auto;
+
+}
+input{
+    color: rgb(235, 248, 115);
+    margin: 5px;
+    padding: 2px;
+    border: inset 2px #5c6888;
+    background: #5c6888;
+    width: 100%;
+}
+.submit{
+    width: 50%;
+    margin-left: 30%;
+}
+.input{
+    font-size: 18px;
+    padding: 2px;
+    
+}
+.input:focus{
+    border: solid 2px rgb(235, 248, 115);
+}
+::placeholder{
+    color: #20242e;
+}
+#msg{
+    margin-left: 30%;
+}

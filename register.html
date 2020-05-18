@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>USING HTML</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+    <header class="start-h">
+        <h1>Welcome- USING HTML</h1>
+    </header>
+
+    <main class="start">
+        <div id="sign-in">
+            <a href="/login">Sign In</a>
+        </div>
+
+        <div id="register">
+            <form action="/register" method="POST" enctype="multipart/form-data" >
+            
+                <div id="profilePic">
+                    <div id="photoInput">
+                        <img src="" class="img-responsive" alt="">
+                    </div>
+                    <input name="img" type="file" value="Add Photo">
+                </div>
+                <input class="input" type="text" name="name" placeholder="Username" required>
+                <input class="input" type="email" name="email" placeholder="Email" required>
+                <input class="input" id="pass1" type="password" name="password" placeholder="Password" required>
+                <input class="input" id="pass2" type="password" name="confirmPass" placeholder="Confirm Password" required>
+                
+                <input class="submit" type="submit" value="Register">
+                <br>
+                <span id="msg"></span>
+                
+            </form>
+        </div>
+
+    </main>
+    
+<script>
+    document.getElementById("register").children[0].addEventListener("submit",checkForm);
+    function checkForm(e){
+        // stoppar submit händelsen och låter funkionen köras innan värderna skickas till servern
+        e.preventDefault();
+        //Tar in lösenorden från dokumentet
+        const pass1 = document.getElementById('pass1');
+        const pass2 = document.getElementById('pass2');
+        // Jämför värderna, om de inte ger samma värde har man skrivit fel lösenord
+        if (pass1.value != pass2.value) { 
+            document.getElementById("msg").innerHTML = "wrong password..."; 
+        } //Jämför längden på ena lösenordet då ordet kan inte vara för kort
+        else if(pass1.value.length <= 10) {
+            document.getElementById("msg").innerHTML = "Must be 10 char long..."; 
+        }
+        else{ //skickar värderna till servern
+            this.submit();
+        } 
+    }
+</script>
+
+</body>
+</html>
